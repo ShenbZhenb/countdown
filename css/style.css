@@ -1,3 +1,8 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
 
 @font-face{
     font-family: 'PF Din Text Cond Pro';
@@ -52,7 +57,7 @@ html, body{
     position: absolute;
     z-index: 1;
     left: 35.5%;
-    width: 557px;
+    max-width: 557px;
     height: 79px;
     
 }
@@ -61,6 +66,8 @@ html, body{
     position: absolute;
     z-index: 1;
     right: 8%;
+    max-width: 188px;
+    height: 79px;
 }
 
 .countdown {
@@ -73,7 +80,7 @@ html, body{
     line-height: 42px;
     color: #A07C50;
     margin-left: 250px;
-    width: 360px;
+    max-width: 360px;
     height: 69px;
     align-self: center;
     z-index: 2;
@@ -124,7 +131,7 @@ html, body{
     align-items: center;
     position: relative;
     padding: 0 25px;
-    width: 150px;
+    max-width: 150px;
     height: 50px;
     display: inline-flex;
     overflow: hidden;
@@ -156,6 +163,28 @@ html, body{
     outline-width: 0px;
   }
 
-  a:hover{
-    border-right: 1px solid #E5E6F0;
+
+  .countdown_ball{
+    display: none ;
   }
+
+  .countdown_photo{
+    display: none;
+  }
+
+
+a::before{
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    border-right: 1px solid #1D1D1B;
+    transition: 0.2s;
+    transform: scaleY(0);
+}  
+
+a:hover{
+    transform: scale(1);
+}
