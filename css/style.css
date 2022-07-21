@@ -1,0 +1,161 @@
+
+@font-face{
+    font-family: 'PF Din Text Cond Pro';
+    src: url(/fonts/PFDinTextUniversal.woff2),
+    url(/fonts/PFDinTextUniversal.woff);
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+
+}
+
+@font-face{
+    font-family: 'PF Din Text Cond Pro';
+    src: url(/fonts/PFDinTextUniversal-Bold.woff2),
+    url(/fonts/PFDinTextUniversal-Bold.woff);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+
+}
+
+
+html, body{
+    background-color: black;
+    margin: 0 auto;
+}
+
+.countdown_block{
+    width: 100%;
+    max-height: 79px;
+    border-top: 1px solid #E5E6F0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+}
+
+.countdown_head{
+    font-family: "pts-r";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    color: #1D1D1B;
+    align-self: center;
+    z-index: 2;
+}
+
+.countdown_fon{
+    position: absolute;
+    z-index: 1;
+    left: 35.5%;
+    width: 557px;
+    height: 79px;
+    
+}
+
+.countdown_picture{
+    position: absolute;
+    z-index: 1;
+    right: 8%;
+}
+
+.countdown {
+    display: inline-block;
+    text-align: center;
+    font-family: 'pts-r';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    color: #A07C50;
+    margin-left: 250px;
+    width: 360px;
+    height: 69px;
+    align-self: center;
+    z-index: 2;
+  }
+  
+  .countdown-number {
+    display: inline-block;
+    border-left: 1px solid #E5E6F0;
+    padding-left: 20px;
+    padding-right:17px;
+  }
+
+  
+  .countdown-time {
+    display: inline-block;
+  }
+
+
+
+  .countdown-number:last-of-type{
+    border-right: 1px solid #E5E6F0;
+  }
+  
+  .countdown-text {
+    display: block;
+    font-family: "pts-r";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A07C50;
+
+  }
+
+  .button{
+    font-family: 'pts-r';
+    border-top: 1px solid #E5E6F0;
+    border-bottom: 1px solid #E5E6F0;
+    background: #fff;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding: 0 25px;
+    width: 150px;
+    height: 50px;
+    display: inline-flex;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #1D1D1B;
+    align-self: center;
+    margin-left: 100px;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    display: inline-block; 
+  }
+
+  a:active:focus:hover{
+    outline: 0;
+    outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+  }
+
+  a:hover{
+    border-right: 1px solid #E5E6F0;
+  }
